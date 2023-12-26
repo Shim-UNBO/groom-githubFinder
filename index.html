@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="spinner" class="spinner" style="display: none;"></div>
+    <header>
+        <h1>GitHub Finder</h1>
+            <div class="search-box">
+                <input type="text" id="search-user" placeholder="Enter a username to fetch a user profile and repos">
+                <button id="search-button">Search</button>
+            </div>
+        </header>
+        <div id="profile-container" class="profile-layout">
+            <div class="profile-photo">
+                <img src="" alt="Profile Photo" id="profile-photo">
+            </div>
+            <div class="profile-info">
+                <div class="user-stats-box">
+                    <div class="stat">
+                        <span class="stat-label">Repos:</span>
+                        <span id="repos-count">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Gists:</span>
+                        <span id="gists-count">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Followers:</span>
+                        <span id="followers-count">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Following:</span>
+                        <span id="following-count">0</span>
+                    </div>
+                </div>
+                <h2 id="profile-name">User Name</h2>
+                <!-- <p><strong>Followers:</strong> <span id="followers-count">0</span></p>
+                <p><strong>Following:</strong> <span id="following-count">0</span></p> -->
+                <p><strong>GitHub:</strong> <a href="" id="github-site">-</a></p>
+                <p><strong>Company:</strong> <span id="company">-</span></p>
+                <p><strong>Location:</strong> <span id="location">-</span></p>
+                <p><strong>Member Since:</strong> <span id="created">-</span></p>
+            </div>
+        </div>
+        <div id="repos-container">
+        
+        <footer>
+
+        </footer>
+   
+        
+        <script src="index.js"></script>
+        <!-- <script src="repo.js"></script> -->
+</body>
+</html>
